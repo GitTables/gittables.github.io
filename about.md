@@ -20,11 +20,13 @@ The GitHub Search API requires a 'topic' string to be included in the query. For
 ```
 
 #### Tables
-A table consists of:
+In total, the full GitTables collection consists of XXM tables.
+
+Each table consists of:
 - Columns: reflects the measured attribute.
 - Rows: assumed to represent a measured entity.
 - Header: denoting the semantic references of each column.
-- Values: reflecting measurements of the entity and.
+- Values: reflecting an attribute's value of an entity.
 
 #### Metadata
 The table-specific metadata consists of the following:
@@ -37,7 +39,7 @@ The table-specific metadata consists of the following:
 The paper describes the construction and analysis of GitTables in more detail.
 
 ```
-[1] Anonymous, Anonymous, Anonymous. (2021, ...). GitTables: a large-scale annotated table collection from GitHub. In Proceedings of .... (pp. ...-...).
+[1] Anonymous, Anonymous, Anonymous. (2021, ...). GitTables: a large-scale annotated table collection from GitHub.
 ```
 
 ## License
@@ -50,5 +52,3 @@ This table collection has been established by:
 - Anonymous at Anonymous.
 - Anonymous at Anonymous.
 - Anonymous at Anonymous.
-
-

@@ -8,9 +8,9 @@ permalink: /usage/
 
 The table collections is stored on XXX. To facilitate different use, we publish different versions of GitTables:
 - _GitTables_: the entire collection of tables with metadata (500 GB). This can be downloaded [here](https://google.com).
-- _GitTables (sample)_: a random sample of 1,000 tables from GitTables (100 MB). This can be downloaded [here](https://google.com).
-- _GitTables (analysis)_: the 1M tables used for the analysis in the associated paper. This can be downloaded [here](https://google.com).
-- _GitTables (gold standard)_: 1M tables with a strict annotation method to ensure a high quality of annotations. This can be downloaded [here](https://google.com).
+- _GitTables - sample_: a random sample of 1,000 tables from GitTables (100 MB). This can be downloaded [here](https://google.com).
+- _GitTables - analysis_: the 1M tables used for the analysis in the associated paper. This can be downloaded [here](https://google.com).
+- _GitTables - gold standard_: 1M tables with a strict annotation method to ensure a high quality of annotations. This can be downloaded [here](https://google.com).
 
 
 ## Using GitTables
