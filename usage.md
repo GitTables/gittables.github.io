@@ -1,8 +1,13 @@
 ---
-layout: page
 title: Usage
-permalink: /usage/
+layout: default
 ---
+
+# Welcome to the website of **GitTables**!
+
+- [Getting GitTables](#getting-gittables)
+- [Using GitTables](#using-gittables)
+- [Replication](#replication)
 
 ## Getting GitTables
 
@@ -29,9 +34,9 @@ metadata = table.schema.metadata
 For more examples please refer to the respective notebooks [here](https://github.com/).
 
 
-## Replicating GitTables
+## Replication
 
-The code used to create and analyse the tables can be found in [this GitHub repository](https://github.com/gittables). For both replication tasks, we recommend reading the paper (see [About]({% link about.md %})) to read the detailed steps.
+The code used to create and analyse the tables can be found in [this GitHub repository](https://github.com/gittables). For both replication tasks, we recommend reading the paper to read the detailed steps.
 
 #### Collection
 The collection of tables itself is difficult to replicate due to the dependency on the unstable GitHub Search API: a search query today yields different results than the same query tomorrow. All code to construct the search queries, extract the CSV files, parse and annotate the tables can be found in the GitHub repository.

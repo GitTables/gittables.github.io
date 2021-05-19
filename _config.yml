@@ -34,7 +34,6 @@ plugins:
 
 header_pages:
   - index.md
-  - about.md
   - usage.md
 
 # Google Analytics
