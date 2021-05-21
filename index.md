@@ -48,7 +48,7 @@ The GitHub Search API requires a 'topic' string to be included in the query. For
 
 
 ## License
-GitTables is licensed under the MIT license. The table data might however be licensed under different licenses as inherited from the GitHub repository that the CSVs were retrieved from.
+GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repository that the CSVs were retrieved from.
 
 
 ## Paper
