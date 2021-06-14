@@ -82,8 +82,8 @@ The GitHub Search API requires queries to include a keyword, which we refer to a
 ### Ontology downloads
 The tables have been annotated with snapshots of DBpedia and Schema.org. These ontologies are provided in the form of a pickle file. Each pickle contains a pickled Pandas DataFrame that can be read through Pandas.
 
-- DBpedia ontology: direct download through [this link](data/dbpedia_20210528.pkl) (509 KB).
-- Schema.org ontology: direct download through [this link](data/schema_20210528.pkl) (619 KB).
+- DBpedia ontology: direct download through [this link](downloads/dbpedia_20210528.pkl) (509 KB).
+- Schema.org ontology: direct download through [this link](downloads/schema_20210528.pkl) (619 KB).
 
 
 ## License
@@ -91,7 +91,7 @@ GitTables is licensed under the [Creative Commons Attributions 4.0 International
 
 
 ## Citation
-The paper describes the construction and analysis of GitTables in more detail and can be downloaded [here](https://google.com).
+The paper describes the construction and analysis of GitTables in more detail and can be downloaded [here](downloads/GitTables.pdf).
 If you use GitTables, please cite our paper:
 
 ```
