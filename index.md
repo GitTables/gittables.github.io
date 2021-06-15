@@ -33,7 +33,7 @@ The high-level pipeline in Figure 1 illustrates how GitTables was created.
 - [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
 - [Paul Groth](http://pgroth.com), University of Amsterdam.
 
-Questions or suggestions? Please contact m.hulsebos < at > uva.nl.
+Questions or suggestions? Please contact m.hulsebos (at) uva.nl.
 
 
 ### Why GitTables
