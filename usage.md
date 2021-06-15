@@ -22,8 +22,6 @@ table = pq.read_table("<filename>.parquet")
 metadata = table.schema.metadata
 {% endhighlight %}
 
-For more examples please refer to the respective notebooks [here](https://github.com/).
-
 
 ## Replicating GitTables
 
