@@ -1,12 +1,11 @@
 ---
 title: Home
-layout: home
+layout: default
 ---
 
 # Welcome to the website of **GitTables**!
 
 - [About GitTables](#about-gittables)
-    - [The team behind GitTables](#the-team-behind-gittables)
     - [Why GitTables](#why-gittables)
     - [The corpus](#the-corpus)
 - [Downloads](#downloads)
@@ -14,7 +13,7 @@ layout: home
     - [Ontology downloads](#ontology-downloads)
 - [License](#license)
 - [Citation](#citation)
-- [News](#news)
+- [Contact](#contact)
 
 ## About GitTables
 
@@ -26,14 +25,6 @@ The high-level pipeline in Figure 1 illustrates how GitTables was created.
     <img src="images/GitTables_pipeline.png" width="500" height="200"/>
     <figcaption style="text-align:center">Figure 1: high-level pipeline of the process of constructing GitTables.</figcaption>
 </p>
-
-
-### The team behind GitTables
-- [Madelon Hulsebos](https://madelonhulsebos.github.io), Sigma Computing and University of Amsterdam,
-- [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
-- [Paul Groth](http://pgroth.com), University of Amsterdam.
-
-Questions or suggestions? Please contact m.hulsebos (at) uva.nl.
 
 
 ### Why GitTables
@@ -64,7 +55,6 @@ Each table stored in a Parquet file, and consists of:
     - Table dimensions,
     - Data types inferred with Pandas,
     - Table topic annotation derived from column annotations.
-
 
 
 ## Downloads
@@ -98,10 +88,39 @@ If you use GitTables, please cite our paper:
 @article{GitTables,
    title={GitTables: A Large-Scale Corpus of Relational Tables},
    author={Hulsebos, Madelon and Demiralp, Çağatay and Groth, Paul},
-   journal={arXiv preprint arXiv:XXXX.YYYYYY},
+   journal={arXiv preprint arXiv:2106.07258},
+   url={https://arxiv.org/abs/2106.07258},
    year={2021}
 }
 ```
 
 
-## News
+## Contact
+
+GitTables has been developed by:
+- [Madelon Hulsebos](https://madelonhulsebos.github.io), Sigma Computing and University of Amsterdam,
+- [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
+- [Paul Groth](http://pgroth.com), University of Amsterdam.
+
+If you have feedback, suggestions or did an interesting project with GitTables, feel free to share through the form below!
+<form
+  action="https://formspree.io/f/xzbygjng"
+  method="POST"
+>
+  <label>
+    Your email:
+    <br>
+    <input type="email" name="_replyto">
+  </label>
+  <br>
+  <label>
+    Your message:
+    <br>
+    <textarea name="message"></textarea>
+  </label>
+  <br>
+  <button type="submit">Send</button>
+</form>
+
+\\
+Alternatively, you can send an email to {{site.email}}.
