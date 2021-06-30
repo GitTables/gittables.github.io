@@ -27,7 +27,9 @@ metadata = table.schema.metadata
 
 The code used to extract, parse and annotate the tables from CSV files can be found in [this GitHub repository](https://github.com/gittables). For details on these procedures we recommend reading the paper. The table corpus itself is difficult to replicate exactly due to the dependency on the unstable GitHub Search API: a search query today yields different results than the same query tomorrow.
 
-The analysis presented in the paper has been conducted on the GitTables 1.7M subset of GitTables, which consists of 1.7M tables. The GitHub repository provides Jupyter notebooks that were used for the analyses and experiments.
+The analysis presented in the paper has been conducted on the GitTables 1.7M subset of GitTables, which consists of 1.7M tables. The GitHub repository provides Jupyter notebooks that were used for the analyses and experiments. 
+
+To understand the quality of the column annotations obtained by the GitTables annotation pipeline versus the human-labeled annotations, we annotated the human-labeled T2Dv2 benchmark using the DBpedia ontology and our annotation pipelines. For the semantic pipieline and syntactic pipeline we find the same annotation as T2Dv2 in 54% and 61% of the table columns. We manually reviewed the deviating annotations for both pipelines and find that the GitTables annotations (based on the DBpedia ontology as on 28-05-2021) are more accurate in many cases. Our manual reviews (n=3) can be downloaded through [this link](downloads/GitTables_T2Dv2_incorrect_annotation_review.xlsx).
 
 
 ## Extending GitTables
