@@ -5,11 +5,13 @@ layout: default
 
 # Welcome to the website of **GitTables**!
 
-- [Using GitTables](#using-gittables)
+- [Processing table files](#processing-table-files)
+- [Responsible use](#responsible-use)
 - [Replicating GitTables](#replicating-gittables)
 - [Extending GitTables](#extending-gittables)
 
-## Using GitTables
+
+## Processing table files
 
 Each table is stored in a Parquet file which can be easily processed by different data processing libraries like Pandas, Spark, and Pyarrow. Each Parquet file consists of the table itself and its metadata.
 
@@ -21,6 +23,15 @@ from pyarrow import parquet as pq
 table = pq.read_table("<filename>.parquet")
 metadata = table.schema.metadata
 {% endhighlight %}
+
+
+## Responsible use
+
+The current versions of GitTables, up to 0.0.4, contain tables extracted from CSV files from public GitHub repositories, hence some tables might not be associated with a license that allows e.g. commercial use. A new version of GitTables will soon be released in which 1) all tables have a license, 2) the license of each table is in the metadata to inform on restrictions. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with the table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
+
+Please be aware that this dataset is uncurated, hence the underlying data files might exhibit sensitive, harmful or otherwise undesired data. The spread and exact replication of such content should be avoided, please report any such observations so that we can remove these files accordingly.
+
+It is also important to assess derived artefacts on the presence of any negative bias before deploying or publishing them. In case harmful biases are observed we would like to be notified so that we can mitigate these problems and improve our guidelines for using GitTables. You can report this through the contact form on https://gittables.github.io.
 
 
 ## Replicating GitTables
