@@ -77,7 +77,9 @@ The tables have been annotated with snapshots of DBpedia and Schema.org. These o
 
 
 ## License
-GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. A new version of GitTables will soon be released in which 1) all tables have a license, 2) the license of each table is in the metadata to inform on restrictions. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with the table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
+GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. 
+
+A new version of GitTables will soon be released in which 1) all tables have a license, 2) the license of each table is in the metadata. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with a table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
 
 
 ## Citation
