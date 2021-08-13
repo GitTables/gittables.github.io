@@ -5,6 +5,7 @@ layout: default
 
 # Welcome to the website of **GitTables**!
 
+- [Quick links](#quick-links)
 - [About GitTables](#about-gittables)
     - [Why GitTables](#why-gittables)
     - [The corpus](#the-corpus)
@@ -14,6 +15,12 @@ layout: default
 - [License](#license)
 - [Citation](#citation)
 - [Contact](#contact)
+
+## Quick links
+
+ <!-- prettier-ignore -->
+[corpus](https://zenodo.org/record/4943312#.YMcUlzYzZ4I) | [paper](https://arxiv.org/pdf/2106.07258) | [github repository](https://github.com/madelonhulsebos/gittables)
+
 
 ## About GitTables
 
@@ -29,13 +36,17 @@ The high-level pipeline in Figure 1 illustrates how GitTables was created.
 
 ### Why GitTables
 
-Existing table corpora primarily contain tables extracted from HTML pages, limiting the capability to represent offline database tables. To train and evaluate high-capacity models for applications beyond the Web, additional resources are needed with tables that resemble relational database tables. We built GitTables to facilitate that need.
+Existing large-scale table corpora primarily contain tables extracted from HTML pages, limiting the capability to represent database tables. These table corpora also lack semantic annotations, like the semantic column types. 
+
+To train and evaluate models for applications beyond the Web, additional resources are needed with tables that resemble relational database tables. We built GitTables to facilitate that need.
 
 
 ### The corpus
 
-The tables in GitTables were extracted from CSV files. On average the tables have 25 columns and 209 rows.
-We annotated table columns with real-world concepts that the columns refer to. The labels for these column annotations (referred to as semantic types) were extracted from the DBpedia and Schema.org ontologies. We used two different annotation methods:
+The tables in GitTables were extracted from CSV files from GitHub. On average the tables have 25 columns and 209 rows.
+We annotated table columns with real-world concepts that the columns refer to. The labels for these column annotations (referred to as semantic types) were extracted from the DBpedia and Schema.org ontologies.
+
+We used two different annotation methods:
 - Syntactic: string-based matching between column names and the semantic types,
 - Semantic: embedding semantic types and column names using a pretrained FastText model trained on the Common Crawl corpus. The annotation corresponds to the most similar semantic type.
 
@@ -50,23 +61,24 @@ Each table stored in a Parquet file, and consists of:
 - The table itself with columns, rows, cell values and a header with the original column names.
 - The table metadata:
     - URL to the original CSV file,
-    - Column annotations from different annotation methods and ontologies,
+    - License of the associated repository,
     - Table ID,
     - Table dimensions,
     - Data types inferred with Pandas,
+    - Column annotations from different annotation methods and ontologies,
     - Table topic annotation derived from column annotations.
 
 
 ## Downloads
 
-GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To facilitate different use-cases, we publish different versions of GitTables. To ensure usage, extension and replication of GitTables on the longer term, we publish the ontologies used for annotation as well. 
+GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To ensure usage, extension and replication of GitTables on the longer term, we publish the ontologies used for annotation as well. 
 
 ### Corpus downloads
 
-The GitHub Search API requires queries to include a keyword, which we refer to as a 'topic'. For example, you can search code files related to the topic 'thing'. This returns all CSV files that contain the string 'thing'. We have kept this 'topic' structure in place, hence each zip file consists of the tables retrieved for that topic.
+The GitHub Search API requires queries to include a keyword, which we refer to as a `topic`. For example, you can search code files related to the topic `thing`. This returns all CSV files that contain the string `thing`. We have kept this structure in place, hence each zip file consists of the tables retrieved for a `topic`.
 
-- GitTables: the entire corpus of 20M tables with metadata (X GB). TBC.
-- GitTables 1.7M: the corpus of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [here](https://zenodo.org/record/4943312#.YMcUlzYzZ4I).
+- GitTables: the entire corpus of 10M tables with metadata (X GB). TBC.
+- GitTables 1.7M: the corpus of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I).
 
 
 ### Ontology downloads
@@ -79,11 +91,11 @@ The tables have been annotated with snapshots of DBpedia and Schema.org. These o
 ## License
 GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. 
 
-A new version of GitTables will soon be released in which 1) all tables have a license, 2) the license of each table is in the metadata. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with a table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
+A new version of GitTables will soon be released in which all tables have a license, and the license of each table is contained in the metadata. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with a table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
 
 
 ## Citation
-The paper describes the construction and analysis of GitTables in more detail and can be downloaded [here](downloads/GitTables.pdf).
+The paper describes the construction and analysis of GitTables in more detail and can be downloaded [**here**](https://arxiv.org/pdf/2106.07258.pdf).
 If you use GitTables, please cite our paper:
 
 ```
@@ -104,7 +116,9 @@ GitTables has been developed by:
 - [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
 - [Paul Groth](http://pgroth.com), University of Amsterdam.
 
-If you have feedback, suggestions or did an interesting project with GitTables, feel free to share through the form below!
+Please consider reporting cases of personal or otherwise undesired tables in GitTables using the form below.
+Feedback, suggestions and results from projects with GitTables are also very welcome!
+
 <form
   action="https://formspree.io/f/xzbygjng"
   method="POST"

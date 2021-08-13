@@ -27,9 +27,9 @@ metadata = table.schema.metadata
 
 ## Responsible use
 
-Please be aware that this dataset is uncurated, hence the underlying data files might exhibit sensitive, harmful or otherwise undesired data. The spread and exact replication of such content should be avoided, please report any such observations so that we can remove these files accordingly.
+To minimize the risk of spreading undesired content, we anonymized columns that were found to contain personal identifiable information. We also removed tables with content detected to stem from social media platforms Twitter, Facebook and Reddit, which could contain harmful content. In case you find any remaining personal or harmful content in GitTables, please report it to us using [the contact form](/#contact).
 
-It is also important to assess derived artefacts on the presence of any negative bias before deploying or publishing them. In case harmful biases are observed we would like to be notified so that we can mitigate these problems and improve our guidelines for using GitTables. You can report this through the contact form on https://gittables.github.io.
+It is also important to assess derived artefacts on the presence of any negative bias before deploying or publishing them. In case additional biases are observed we would like to be notified so that we can communicate this to other users of GitTables.
 
 
 ## Replicating GitTables
