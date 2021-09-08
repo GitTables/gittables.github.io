@@ -112,7 +112,7 @@ If you use GitTables, please cite our paper:
 ## Contact
 
 GitTables has been developed by:
-- [Madelon Hulsebos](https://madelonhulsebos.github.io), Sigma Computing and University of Amsterdam,
+- [Madelon Hulsebos](https://madelonhulsebos.github.io), University of Amsterdam,
 - [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
 - [Paul Groth](http://pgroth.com), University of Amsterdam.
 
