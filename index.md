@@ -8,9 +8,9 @@ layout: default
 - [Quick links](#quick-links)
 - [About GitTables](#about-gittables)
     - [Why GitTables](#why-gittables)
-    - [The corpus](#the-corpus)
+    - [The dataset](#the-dataset)
 - [Downloads](#downloads)
-    - [Corpus downloads](#corpus-downloads)
+    - [Dataset downloads](#dataset-downloads)
     - [Ontology downloads](#ontology-downloads)
 - [License](#license)
 - [Citation](#citation)
@@ -19,17 +19,17 @@ layout: default
 ## Quick links
 
  <!-- prettier-ignore -->
-[corpus](https://zenodo.org/record/4943312#.YMcUlzYzZ4I) | [paper](https://arxiv.org/pdf/2106.07258) | [github repository](https://github.com/madelonhulsebos/gittables)
+[dataset](https://zenodo.org/record/4943312#.YMcUlzYzZ4I) | [paper](https://arxiv.org/pdf/2106.07258) | [github repository](https://github.com/madelonhulsebos/gittables)
 
 
 ## About GitTables
 
-GitTables is a corpus of currently 1.7M relational tables extracted from CSV files in GitHub. Our continuing curation aims at growing the corpus to at least 20M tables. Table columns in GitTables have been annotated with more than 2K different semantic types from Schema.org and DBpedia. Our column annotations consist of semantic types, hierarchical relations, range types and descriptions.
+GitTables is a dataset of currently 1.7M relational tables extracted from CSV files in GitHub. Our continuing curation aims at growing the dataset to at least 20M tables. Table columns in GitTables have been annotated with more than 2K different semantic types from Schema.org and DBpedia. Our column annotations consist of semantic types, hierarchical relations, range types and descriptions.
 
 The high-level pipeline in Figure 1 illustrates how GitTables was created.
 
 <p align="center">
-    <img src="images/GitTables_pipeline.png" width="500" height="200"/>
+    <img src="images/GitTables_pipeline.png" width="600" height="200"/>
     <figcaption style="text-align:center">Figure 1: high-level pipeline of the process of constructing GitTables.</figcaption>
 </p>
 
@@ -41,14 +41,14 @@ Existing large-scale table corpora primarily contain tables extracted from HTML 
 To train and evaluate models for applications beyond the Web, additional resources are needed with tables that resemble relational database tables. We built GitTables to facilitate that need.
 
 
-### The corpus
+### The dataset
 
 The tables in GitTables were extracted from CSV files from GitHub. On average the tables have 25 columns and 209 rows.
 We annotated table columns with real-world concepts that the columns refer to. The labels for these column annotations (referred to as semantic types) were extracted from the DBpedia and Schema.org ontologies.
 
 We used two different annotation methods:
 - Syntactic: string-based matching between column names and the semantic types,
-- Semantic: embedding semantic types and column names using a pretrained FastText model trained on the Common Crawl corpus. The annotation corresponds to the most similar semantic type.
+- Semantic: embedding semantic types and column names using a pretrained FastText model trained on the Common Crawl dataset. The annotation corresponds to the most similar semantic type.
 
 Figure 2 presents the distribution of semantic types of the tables per annotation method and ontology.
 
@@ -73,12 +73,12 @@ Each table stored in a Parquet file, and consists of:
 
 GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To ensure usage, extension and replication of GitTables on the longer term, we publish the ontologies used for annotation as well. 
 
-### Corpus downloads
+### Dataset downloads
 
 The GitHub Search API requires queries to include a keyword, which we refer to as a `topic`. For example, you can search code files related to the topic `thing`. This returns all CSV files that contain the string `thing`. We have kept this structure in place, hence each zip file consists of the tables retrieved for a `topic`.
 
-- GitTables: the entire corpus of 10M tables with metadata (X GB). TBC.
-- GitTables 1.7M: the corpus of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I).
+- GitTables: the entire dataset of 10M tables with metadata (X GB). TBC.
+- GitTables 1.7M: the dataset of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I).
 
 
 ### Ontology downloads

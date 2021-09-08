@@ -34,7 +34,7 @@ It is also important to assess derived artefacts on the presence of any negative
 
 ## Replicating GitTables
 
-The code used to extract, parse and annotate the tables from CSV files can be found in [this GitHub repository](https://github.com/madelonhulsebos/gittables). For details on these procedures we recommend reading the paper. The table corpus itself is difficult to replicate exactly due to the dependency on the unstable GitHub Search API: a search query today yields different results than the same query tomorrow.
+The code used to extract, parse and annotate the tables from CSV files can be found in [this GitHub repository](https://github.com/madelonhulsebos/gittables). For details on these procedures we recommend reading the paper. The table dataset itself is difficult to replicate exactly due to the dependency on the unstable GitHub Search API: a search query today yields different results than the same query tomorrow.
 
 The analysis presented in the paper has been conducted on the GitTables 1.7M subset of GitTables, which consists of 1.7M tables. The GitHub repository provides Jupyter notebooks that were used for the analyses and experiments. 
 
