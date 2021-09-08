@@ -36,6 +36,7 @@ header_pages:
   - index.md
   - usage.md
   - news.md
+  - documentation.md
 
 # Google Analytics
 google_analytics: G-F0GRRKV16G
