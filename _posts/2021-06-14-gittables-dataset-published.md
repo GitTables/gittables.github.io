@@ -2,7 +2,6 @@
 layout: post
 title:  "GitTables 1.7M published."
 date:   2021-06-13
-categories: dataset published
 ---
 
 We have published the corpus used for the analysis in the paper _GitTables: A Large-Scale Corpus of Relational Tables_.
