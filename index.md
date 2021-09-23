@@ -19,7 +19,7 @@ layout: default
 ## Quick links
 
  <!-- prettier-ignore -->
-[dataset](https://zenodo.org/record/4943312#.YMcUlzYzZ4I) | [paper](https://arxiv.org/pdf/2106.07258) | [github repository](https://github.com/madelonhulsebos/gittables)
+[dataset](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"} | [paper](https://arxiv.org/pdf/2106.07258){:target="_blank"} | [github repository](https://github.com/madelonhulsebos/gittables){:target="_blank"}
 
 
 ## About GitTables
@@ -78,24 +78,24 @@ GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To ensure us
 The GitHub Search API requires queries to include a keyword, which we refer to as a `topic`. For example, you can search code files related to the topic `thing`. This returns all CSV files that contain the string `thing`. We have kept this structure in place, hence each zip file consists of the tables retrieved for a `topic`.
 
 - GitTables: the entire dataset of 10M tables with metadata (X GB). TBC.
-- GitTables 1.7M: the dataset of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I).
+- GitTables 1.7M: the dataset of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"}.
 
 
 ### Ontology downloads
 The tables have been annotated with snapshots of DBpedia and Schema.org. These ontologies are provided in the form of a pickle file. Each pickle contains a pickled Pandas DataFrame that can be read through Pandas.
 
-- DBpedia ontology: direct download through [this link](downloads/dbpedia_20210528.pkl) (509 KB).
-- Schema.org ontology: direct download through [this link](downloads/schema_20210528.pkl) (619 KB).
+- DBpedia ontology: direct download through [this link](downloads/dbpedia_20210528.pkl){:target="_blank"} (509 KB).
+- Schema.org ontology: direct download through [this link](downloads/schema_20210528.pkl){:target="_blank"} (619 KB).
 
 
 ## License
-GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. 
+GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/){:target="_blank"} (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. 
 
 A new version of GitTables will soon be released in which all tables have a license, and the license of each table is contained in the metadata. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with a table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
 
 
 ## Citation
-The paper describes the construction and analysis of GitTables in more detail and can be downloaded [**here**](https://arxiv.org/pdf/2106.07258.pdf).
+The paper describes the construction and analysis of GitTables in more detail and can be downloaded [**here**](https://arxiv.org/pdf/2106.07258.pdf){:target="_blank"}.
 If you use GitTables, please cite our paper:
 
 ```
@@ -112,9 +112,9 @@ If you use GitTables, please cite our paper:
 ## Contact
 
 GitTables has been developed by:
-- [Madelon Hulsebos](https://madelonhulsebos.github.io), University of Amsterdam,
-- [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/), Sigma Computing,
-- [Paul Groth](http://pgroth.com), University of Amsterdam.
+- [Madelon Hulsebos](https://madelonhulsebos.github.io){:target="_blank"}, University of Amsterdam,
+- [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/){:target="_blank"}, Sigma Computing,
+- [Paul Groth](http://pgroth.com){:target="_blank"}, University of Amsterdam.
 
 Please consider reporting cases of personal or otherwise undesired tables in GitTables using the form below.
 Feedback, suggestions and results from projects with GitTables are also very welcome!
