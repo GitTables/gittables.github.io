@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitTables featured in the SemTab 2021 challenge."
+title:  "GitTables featured in the SemTab challenge."
 date:   2021-09-22
 categories: gittables semtab
 ---
