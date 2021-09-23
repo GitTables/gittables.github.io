@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GitTables featured in the SemTab challenge."
-date:   2021-09-22
+date:   2021-09-23
 categories: gittables semtab
 ---
 
