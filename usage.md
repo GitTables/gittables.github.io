@@ -5,6 +5,7 @@ layout: default
 
 # Welcome to the website of **GitTables**!
 
+On this page:
 - [Processing table files](#processing-table-files)
 - [Responsible use](#responsible-use)
 - [Replicating GitTables](#replicating-gittables)

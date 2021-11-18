@@ -5,13 +5,10 @@ layout: default
 
 # Welcome to the website of **GitTables**!
 
+On this page:
 - [Quick links](#quick-links)
 - [About GitTables](#about-gittables)
-    - [Why GitTables](#why-gittables)
-    - [The dataset](#the-dataset)
 - [Downloads](#downloads)
-    - [Dataset downloads](#dataset-downloads)
-    - [Ontology downloads](#ontology-downloads)
 - [License](#license)
 - [Citation](#citation)
 - [Contact](#contact)
