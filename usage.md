@@ -25,6 +25,17 @@ table = pq.read_table("<filename>.parquet")
 metadata = table.schema.metadata
 {% endhighlight %}
 
+Each table is stored in a Parquet file, and consists of:
+- The table itself with columns, rows, cell values and a header with the original column names.
+- The table metadata:
+    - URL to the original CSV file,
+    - License of the associated repository,
+    - Table ID,
+    - Table dimensions,
+    - Data types inferred with Pandas,
+    - Column annotations from different annotation methods and ontologies,
+    - Table topic annotation derived from column annotations.
+
 
 ## Responsible use
 

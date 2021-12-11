@@ -15,13 +15,12 @@ On this page:
 
 ## Quick links
 
- <!-- prettier-ignore -->
 [dataset](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"} | [paper](https://arxiv.org/pdf/2106.07258){:target="_blank"} | [github repository](https://github.com/madelonhulsebos/gittables){:target="_blank"}
 
 
 ## About GitTables
 
-GitTables is a dataset of currently 1.7M relational tables extracted from CSV files in GitHub. Our continuing curation aims at growing the dataset to at least 20M tables. Table columns in GitTables have been annotated with more than 2K different semantic types from Schema.org and DBpedia. Our column annotations consist of semantic types, hierarchical relations, range types and descriptions.
+GitTables is a dataset of currently 1.7M relational tables extracted from CSV files in GitHub. Our continuing curation aims at growing the dataset to at least 10M tables. Table columns in GitTables have been annotated with more than 2K different semantic types from [Schema.org](https://schema.org/){:target="_blank"} and [DBpedia](https://www.dbpedia.org/resources/ontology/){:target="_blank"}. Our column annotations consist of semantic types, hierarchical relations, range types and descriptions.
 
 The high-level pipeline in Figure 1 illustrates how GitTables was created.
 
@@ -41,7 +40,9 @@ To train and evaluate models for applications beyond the Web, additional resourc
 ### The dataset
 
 The tables in GitTables were extracted from CSV files from GitHub. On average the tables have 25 columns and 209 rows.
-We annotated table columns with real-world concepts that the columns refer to. The labels for these column annotations (referred to as semantic types) were extracted from the DBpedia and Schema.org ontologies.
+Each table is associated with table metadata, in the form of the original URL, license, dimensions, data types.
+
+We also annotated table columns with real-world concepts that the columns refer to. The labels for these column annotations (referred to as semantic types) were extracted from the DBpedia and Schema.org ontologies.
 
 We used two different annotation methods:
 - Syntactic: string-based matching between column names and the semantic types,
@@ -54,17 +55,6 @@ Figure 2 presents the distribution of semantic types of the tables per annotatio
     <figcaption style="text-align:center">Figure 2: distribution of top 25 semantic types resulting from different annotation methods and ontologies.</figcaption>
 </p>
 
-Each table stored in a Parquet file, and consists of:
-- The table itself with columns, rows, cell values and a header with the original column names.
-- The table metadata:
-    - URL to the original CSV file,
-    - License of the associated repository,
-    - Table ID,
-    - Table dimensions,
-    - Data types inferred with Pandas,
-    - Column annotations from different annotation methods and ontologies,
-    - Table topic annotation derived from column annotations.
-
 
 ## Downloads
 
@@ -72,17 +62,16 @@ GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To ensure us
 
 ### Dataset downloads
 
-The GitHub Search API requires queries to include a keyword, which we refer to as a `topic`. For example, you can search code files related to the topic `thing`. This returns all CSV files that contain the string `thing`. We have kept this structure in place, hence each zip file consists of the tables retrieved for a `topic`.
+The [GitHub Search API](https://docs.github.com/en/search-github/searching-on-github/searching-code){:target="_blank"} requires queries to include a keyword, which we refer to as a `topic`. We have kept this structure in place, hence each zip file consists of the tables retrieved for a `topic`.
 
+- GitTables 1.7M: the dataset of 1.7M tables used for the analysis in the associated paper. This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"} (25.5 GB).
 - GitTables: the entire dataset of 10M tables with metadata (X GB). TBC.
-- GitTables 1.7M: the dataset of 1.7M tables used for the analysis in the associated paper (25.5 GB). This dataset can be found on Zenodo [**here**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"}.
-
 
 ### Ontology downloads
 The tables have been annotated with snapshots of DBpedia and Schema.org. These ontologies are provided in the form of a pickle file. Each pickle contains a pickled Pandas DataFrame that can be read through Pandas.
 
-- DBpedia ontology: direct download through [this link](downloads/dbpedia_20210528.pkl){:target="_blank"} (509 KB).
-- Schema.org ontology: direct download through [this link](downloads/schema_20210528.pkl){:target="_blank"} (619 KB).
+- DBpedia ontology: direct download [**here**](downloads/dbpedia_20210528.pkl){:target="_blank"} (509 KB).
+- Schema.org ontology: direct download [**here**](downloads/schema_20210528.pkl){:target="_blank"} (619 KB).
 
 
 ## License
