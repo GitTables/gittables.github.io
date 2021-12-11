@@ -14,7 +14,14 @@ On this page:
 
 ## Processing table files
 
-Each table is stored in a Parquet file which can be easily processed by different data processing libraries like Pandas, Spark, and Pyarrow. Each Parquet file consists of the table itself and its metadata.
+Each table is stored in a Parquet file which can be processed by different data processing libraries like Pandas, Spark, and Pyarrow. Each Parquet file consists of the table itself and its metadata, consisting of:
+- URL to the original CSV file,
+- License of the associated repository,
+- Table ID,
+- Table dimensions,
+- Data types inferred with Pandas,
+- Column annotations from different annotation methods and ontologies,
+- Table topic annotation derived from column annotations.
 
 The table and metadata can be extracted using Pyarrow as follows:
 
@@ -24,17 +31,6 @@ from pyarrow import parquet as pq
 table = pq.read_table("<filename>.parquet")
 metadata = table.schema.metadata
 {% endhighlight %}
-
-Each table is stored in a Parquet file, and consists of:
-- The table itself with columns, rows, cell values and a header with the original column names.
-- The table metadata:
-    - URL to the original CSV file,
-    - License of the associated repository,
-    - Table ID,
-    - Table dimensions,
-    - Data types inferred with Pandas,
-    - Column annotations from different annotation methods and ontologies,
-    - Table topic annotation derived from column annotations.
 
 
 ## Responsible use
