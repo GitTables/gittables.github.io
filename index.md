@@ -14,7 +14,7 @@ On this page:
 - [Contact](#contact)
 
 ## Quick links
-
+ <!-- prettier-ignore -->
 [dataset](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"} | [paper](https://arxiv.org/pdf/2106.07258){:target="_blank"} | [github repository](https://github.com/madelonhulsebos/gittables){:target="_blank"}
 
 
