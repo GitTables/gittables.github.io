@@ -3,15 +3,20 @@ title: Home
 layout: default
 ---
 
-# Welcome to the website of **GitTables**!
+# GitTables: a large-scale corpus of relational tables.
 
-On this page:
+<p align="center">
+    <img src="images/GitTables_pipeline.png" width="600" height="200"/>
+    <figcaption style="text-align:center">Figure 1: high-level pipeline of the process of constructing GitTables.</figcaption>
+</p>
+
+<!-- On this page:
 - [Quick links](#quick-links)
 - [About GitTables](#about-gittables)
 - [Downloads](#downloads)
 - [License](#license)
 - [Citation](#citation)
-- [Contact](#contact)
+- [Contact](#contact) -->
 
 ## Quick links
  <!-- prettier-ignore -->
@@ -23,11 +28,6 @@ On this page:
 GitTables is a dataset of currently 1.7M relational tables extracted from CSV files in GitHub. Our continuing curation aims at growing the dataset to at least 10M tables. Table columns in GitTables have been annotated with more than 2K different semantic types from [Schema.org](https://schema.org/){:target="_blank"} and [DBpedia](https://www.dbpedia.org/resources/ontology/){:target="_blank"}. Our column annotations consist of semantic types, hierarchical relations, range types and descriptions.
 
 The high-level pipeline in Figure 1 illustrates how GitTables was created.
-
-<p align="center">
-    <img src="images/GitTables_pipeline.png" width="600" height="200"/>
-    <figcaption style="text-align:center">Figure 1: high-level pipeline of the process of constructing GitTables.</figcaption>
-</p>
 
 
 ### Why GitTables

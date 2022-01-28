@@ -24,8 +24,8 @@ description: ""
 email: m.hulsebos(at)uva.nl
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gittables.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: anonymous
-# github_username:  anonymous
+twitter_username: MadelonHulsebos
+github_username:  madelonhulsebos
 
 # Build settings
 theme: minima

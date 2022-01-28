@@ -3,13 +3,13 @@ title: Usage
 layout: default
 ---
 
-# Welcome to the website of **GitTables**!
+# GitTables: a large-scale corpus of relational tables.
 
-On this page:
+<!-- On this page:
 - [Processing table files](#processing-table-files)
 - [Responsible use](#responsible-use)
 - [Replicating GitTables](#replicating-gittables)
-- [Extending GitTables](#extending-gittables)
+- [Extending GitTables](#extending-gittables) -->
 
 
 ## Processing table files

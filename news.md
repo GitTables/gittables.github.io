@@ -3,4 +3,4 @@ title: News
 layout: news
 ---
 
-# Welcome to the website of **GitTables**!
+# GitTables: a large-scale corpus of relational tables.
