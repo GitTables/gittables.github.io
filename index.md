@@ -7,7 +7,7 @@ layout: default
 
 <p align="center">
     <img src="images/GitTables_pipeline.png" width="600" height="200"/>
-    <figcaption style="text-align:center">Figure 1: high-level pipeline of the process of constructing GitTables.</figcaption>
+    <figcaption style="text-align:center">Figure 1: high-level overview of how GitTables is build.</figcaption>
 </p>
 
 <!-- On this page:
@@ -79,7 +79,7 @@ Figure 2 presents the distribution of semantic types of the tables per annotatio
 
 ## Downloads
 
-GitTables is hosted on Zenodo with DOI: **10.5281/zenodo.4943312**. To ensure usage, extension and replication of GitTables on the longer term we publish the code for extraction, curation, and annotation, as well as the ontologies used for annotation. 
+GitTables is hosted on Zenodo with DOI: 10.5281/zenodo.4943312. To ensure usage, extension and replication of GitTables on the longer term we publish the code for extraction, curation, and annotation, as well as the ontologies used for annotation. 
 
 ### Dataset downloads
 
@@ -104,7 +104,7 @@ A new version of GitTables will soon be released in which all tables have a lice
 
 
 ## Citation
-The paper describes the construction and analysis of GitTables in more detail and can be downloaded [**here**](https://arxiv.org/pdf/2106.07258.pdf){:target="_blank"}.
+[Our paper](https://arxiv.org/pdf/2106.07258.pdf){:target="_blank"} describes the construction, analysis and use-cases of GitTables in more detail.
 If you use GitTables, please cite our paper:
 
 ```
@@ -120,7 +120,7 @@ If you use GitTables, please cite our paper:
 
 ## Contact
 
-GitTables has been developed by:
+GitTables is developed by:
 - [Madelon Hulsebos](https://madelonhulsebos.github.io){:target="_blank"}, University of Amsterdam,
 - [Çağatay Demiralp](https://hci.stanford.edu/~cagatay/){:target="_blank"}, Sigma Computing,
 - [Paul Groth](http://pgroth.com){:target="_blank"}, University of Amsterdam.
