@@ -7,7 +7,7 @@ layout: default
 
 <p align="center">
     <img src="images/GitTables_pipeline.png" width="600" height="200"/>
-    <figcaption style="text-align:center">Figure 1: high-level overview of how GitTables is build.</figcaption>
+    <figcaption style="text-align:center">Figure 1: high-level overview of how GitTables is constructed.</figcaption>
 </p>
 
 <!-- On this page:
@@ -41,7 +41,7 @@ GitTables is a large-scale corpus of relational tables extracted from CSV files 
 
 We aim at growing GitTables to at least 10M tables. Table columns in GitTables have been annotated with >2K different semantic types from [Schema.org](https://schema.org/){:target="_blank"} and [DBpedia](https://www.dbpedia.org/resources/ontology/){:target="_blank"}. Column annotations consist of semantic types, hierarchical relations, atomic data types and descriptions.
 
-Figure 1 illustrates how GitTables was created, on a high-level.
+Figure 1 illustrates our approach to creating GitTables, on a high level.
 
 
 ### Why GitTables
@@ -83,7 +83,7 @@ GitTables is hosted on Zenodo with DOI: 10.5281/zenodo.4943312. To ensure usage,
 
 ### Dataset downloads
 
-The [GitHub Search API](https://docs.github.com/en/search-github/searching-on-github/searching-code){:target="_blank"} requires queries to include a keyword, which we refer to as a `topic` (e.g. ``id``, ``object``, etc.). We kept this structure in place and each zip file contains the tables retrieved for a `topic`.
+The [GitHub Search API](https://docs.github.com/en/search-github/searching-on-github/searching-code){:target="_blank"} requires queries to include a keyword, which we refer to as a topic (e.g. ``id``, ``object``, etc.). We kept this structure in place so each zip file download contains the tables retrieved for a topic.
 
 - [GitTables 1.7M (25.5 GB)](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"}: the dataset of 1.7M tables used for the analysis in the associated paper.
 - [GitTables semantic type detection dataset (3.6 MB)](https://zenodo.org/record/5706316#.YgPNpn3MJ4I){:target="_blank"}: a dataset of 1101 tables and associated labels used for benchmarking semantic column type detection.
