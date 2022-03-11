@@ -6,7 +6,7 @@ layout: default
 # GitTables: a large-scale corpus of relational tables.
 
 <p align="center">
-    <img src="images/GitTables_pipeline.png" width="600" height="200"/>
+    <img src="images/GitTables_pipeline.png"/>
     <figcaption style="text-align:center">Figure 1: high-level overview of how GitTables is constructed.</figcaption>
 </p>
 
@@ -56,7 +56,7 @@ Example use-cases that GitTables can facilitate that may use table representatio
 On average the tables have 25 columns and 209 rows, more detailed statistics can be found in the table on top of this page. Each table is stored in a parquet file and comes with metadata, in the form of the original URL, license, and table dimensions. Figure 2 shows an example table.
 
 <p align="center">
-    <img src="images/organism_table.png" width="600" height="110"/>
+    <img src="images/organism_table.png"/>
     <figcaption style="text-align:center">Figure 2: example of a table retrieved based on the ``organism'' query.</figcaption>
 </p>
 
@@ -69,7 +69,7 @@ We used two different annotation methods:
 Figure 3 presents the distribution of semantic types of the tables per annotation method and ontology.
 
 <p align="center">
-    <img src="images/column_types_distributions_total.png" width="600" height="300"/>
+    <img src="images/column_types_distributions_total.png"/>
     <figcaption style="text-align:center">Figure 3: distribution of top 25 semantic types resulting from different annotation methods and ontologies.</figcaption>
 </p>
 
