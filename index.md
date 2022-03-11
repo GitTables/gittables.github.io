@@ -47,10 +47,9 @@ Example use-cases that GitTables can facilitate that may use table representatio
 
 - Data search, integration, and validation.
 - Data visualization and analysis recommendation.
-- Schema autocompletion for e.g. database or knowledge base design.
-- Database applications like query optimization.
+- Schema completion for e.g. database or knowledge base design.
 
-
+ 
 ### The dataset
 
 On average the tables have 25 columns and 209 rows, more detailed statistics can be found in the table on top of this page. Each table is stored in a parquet file and comes with metadata, in the form of the original URL, license, and table dimensions. Figure 2 shows an example table.
@@ -109,7 +108,7 @@ A new version of GitTables will soon be released in which all tables have a lice
 If you use GitTables, please cite our paper:
 
 ```
-@article{GitTables,
+@article{hulsebos2021gittables,
    title={GitTables: A Large-Scale Corpus of Relational Tables},
    author={Hulsebos, Madelon and Demiralp, {\c{C}}a{\u{g}}atay and Groth, Paul},
    journal={arXiv preprint arXiv:2106.07258},
