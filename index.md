@@ -89,8 +89,8 @@ The [GitHub Search API](https://docs.github.com/en/search-github/searching-on-gi
 ### Ontology downloads
 The tables have been annotated with snapshots of DBpedia and Schema.org. These ontologies are provided in the form of a pickle file. Each pickle contains a pickled Pandas DataFrame with the semantic types per ontology.
 
-- [DBpedia ontology (509 KB)](downloads/dbpedia_20210528.pkl){:target="_blank"}.
-- [Schema.org ontology (619 KB)](downloads/schema_20210528.pkl){:target="_blank"}.
+- [DBpedia ontology (509 KB)](assets/dbpedia_20210528.pkl){:target="_blank"}.
+- [Schema.org ontology (619 KB)](assets/schema_20210528.pkl){:target="_blank"}.
 
 
 ## **Using GitTables**
