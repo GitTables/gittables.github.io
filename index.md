@@ -19,7 +19,7 @@ layout: default
 
 ## **Quick Facts**
 
-GitTables is a large-scale corpus of relational tables extracted from CSV files in GitHub, that facilitates learning table representation models and applications in e.g. data management, data analysis, etc.
+GitTables is a large-scale corpus of relational tables extracted from CSV files in GitHub, that facilitates learning table representation models and applications in e.g. data management, data analysis, etc. We keep expanding GitTables to at least 10M tables (ETA: 2022).
 
 | Statistic                                          | Value                             |
 |----------------------------------------------------|-----------------------------------|
