@@ -21,18 +21,18 @@ layout: default
 
 GitTables is a large-scale corpus of relational tables extracted from CSV files in GitHub, that facilitates learning table representation models and applications in e.g. data management, data analysis, etc. We keep expanding GitTables to at least 10M tables (ETA: early 2023).
 
-| Statistic                                          | Value                             |
-|----------------------------------------------------|-----------------------------------|
-| # tables                                           | 1.7M                              |
-| average # columns                                  | 25                                |
-| average # rows                                     | 209                               |
-| # annotated tables (at least 1 column annotation)  | 1.0M (DBpedia), 1.5M (Schema.org) |
-| # unique semantic types                            | 1218 (DBpedia), 924 (Schema.org)  |
+| Statistic                                          | Value                               |
+|----------------------------------------------------|-------------------------------------|
+| # tables                                           | 1M                                  |
+| average # columns                                  | 12                                  |
+| average # rows                                     | 142                                 |
+| # annotated tables (at least 1 column annotation)  | 723K+ (DBpedia), 738K+ (Schema.org) |
+| # unique semantic types                            | 835 (DBpedia), 677 (Schema.org)     |
 
 
 ## **About GitTables**
 
-GitTables is a large-scale corpus of 1.7M relational tables extracted from CSV files in GitHub. We aim at growing GitTables to at least 10M tables. Each table is distributed in its original form (e.g. with the original header), and comes with metadata like semantic type annotations of table columns. For these annotations, we used >2K different semantic types from [Schema.org](https://schema.org/){:target="_blank"} and [DBpedia](https://www.dbpedia.org/resources/ontology/){:target="_blank"}.
+GitTables is a large-scale corpus of 1M relational tables extracted from CSV files in GitHub. We aim at growing GitTables to at least 10M tables. Each table is distributed in its original form (e.g. with the original header), and comes with metadata like semantic type annotations of table columns. For these annotations, we used >2K different semantic types from [Schema.org](https://schema.org/){:target="_blank"} and [DBpedia](https://www.dbpedia.org/resources/ontology/){:target="_blank"}.
 
 Figure 1 illustrates our approach to creating GitTables, on a high level.
 
@@ -81,8 +81,9 @@ GitTables is hosted on Zenodo which ensures long-term persistence. To facilitate
 
 The [GitHub Search API](https://docs.github.com/en/search-github/searching-on-github/searching-code){:target="_blank"} requires queries to include a keyword, which we refer to as a topic (e.g. ``id``, ``object``, etc.). We kept this structure in place so each zip file download contains the tables retrieved for a topic.
 
-- [**GitTables 1.7M (25.5 GB)**](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"}: the primary corpus of 1.7M tables used for the analysis in the associated paper.
-- [GitTables semantic type detection benchmark dataset (3.6 MB)](https://zenodo.org/record/5706316#.YgPNpn3MJ4I){:target="_blank"}: a smaller subset of 1101 tables and associated labels used for benchmarking semantic column type detection.
+- [**GitTables 1M (16.3 GB)**](https://zenodo.org/record/6517052){:target="_blank"}: the primary corpus of 1M tables used for the analysis in the associated paper.
+- [GitTables 1M - CSV files (6.8 GB)](https://zenodo.org/record/6515973){:target="_blank"}: the CSV files of which the tables were extracted.
+- [GitTables benchmark - column type detection (3.6 MB)](https://zenodo.org/record/5706316){:target="_blank"}: a smaller subset of 1101 tables and associated labels used for benchmarking semantic column type detection.
 - GitTables (TBC): the entire dataset of 10M tables with metadata.
 
 
@@ -98,9 +99,7 @@ The tables have been annotated with snapshots of DBpedia and Schema.org. These o
 For more detailed instructions for using GitTables, please check the [Usage](usage.md) page.
 
 ### License
-GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/){:target="_blank"} (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. 
-
-A new version of GitTables will soon be released in which all tables have a license, and the license of each table is contained in the metadata. In the meantime, we suggest to use GitHub's License API to retrieve the license associated with a table (you can use the URL in the metadata to do so) to understand what restrictions apply to each table.
+GitTables is licensed under the [Creative Commons Attributions 4.0 International license](https://creativecommons.org/licenses/by/4.0/){:target="_blank"} (CC BY 4.0). The table data might however be licensed under different licenses as inherited from the GitHub repositories that the CSVs were retrieved from. All tables in the Zenodo dataset with version 0.0.6 have a license that allows distribution of the data. The specific license of each table is attached to the metadata in the parquet file.
 
 
 ### Citation
