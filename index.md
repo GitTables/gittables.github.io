@@ -14,7 +14,7 @@ layout: default
 ## **Quick Links**
 
  <!-- prettier-ignore -->
-[dataset download](https://zenodo.org/record/4943312#.YMcUlzYzZ4I){:target="_blank"} | [paper](https://arxiv.org/pdf/2106.07258){:target="_blank"} | [github repository](https://github.com/madelonhulsebos/gittables){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=jEBKcmdIFzw){:target="_blank"}
+[dataset download](https://zenodo.org/record/6517052){:target="_blank"} | [paper](https://arxiv.org/pdf/2106.07258){:target="_blank"} | [github repository](https://github.com/madelonhulsebos/gittables){:target="_blank"} | [video presentation](https://www.youtube.com/watch?v=jEBKcmdIFzw){:target="_blank"}
 
 
 ## **Quick Facts**
