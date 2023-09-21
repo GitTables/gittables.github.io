@@ -107,12 +107,15 @@ GitTables is licensed under the [Creative Commons Attributions 4.0 International
 If you use GitTables, please cite our paper:
 
 ```
-@article{hulsebos2021gittables,
-   title={GitTables: A Large-Scale Corpus of Relational Tables},
-   author={Hulsebos, Madelon and Demiralp, {\c{C}}a{\u{g}}atay and Groth, Paul},
-   journal={arXiv preprint arXiv:2106.07258},
-   url={https://arxiv.org/abs/2106.07258},
-   year={2021}
+@article{hulsebos2023gittables,
+  title={Gittables: A large-scale corpus of relational tables},
+  author={Hulsebos, Madelon and Demiralp, {\c{C}}agatay and Groth, Paul},
+  journal={Proceedings of the ACM on Management of Data},
+  volume={1},
+  number={1},
+  pages={1--17},
+  year={2023},
+  publisher={ACM New York, NY, USA}
 }
 ```
 
